@@ -5,15 +5,11 @@ import java.net.DatagramSocket;
 import java.util.logging.Logger;
 
 /**
- * Created by IntelliJ IDEA.
  * User: oivoodoo
  * Date: Nov 3, 2009
  * Time: 9:59:28 PM
- * To change this template use File | Settings | File Templates.
  */
 public class Distribution extends Thread {
-    private final int TCP_PORT = 9001;
-    private final int DATAGRAM_PORT = 9002;
     private long id = -1;
     private boolean isRoot;
     private Socket socket = null;
@@ -21,17 +17,12 @@ public class Distribution extends Thread {
     private DatagramSocket datagramSocket = null;
     private Logger logger = Logger.getLogger(Distribution.class.getName());
 
-    // Commands
-    private String PORT = "PORT %s\r\n";
-    private String MEMORY = "MEMORY %s\r\n";
-    private String IAMTHERE = "IAMTHERE: %s\r\n";
-
     public Distribution() {
         try {
             logger.info("Start Create Sockets");
             socket = new Socket();
-            serverSocket = new ServerSocket(TCP_PORT); 
-            datagramSocket = new DatagramSocket(DATAGRAM_PORT);
+            serverSocket = new ServerSocket(DistributionConstants.TCP_PORT);
+            datagramSocket = new DatagramSocket(DistributionConstants.DATAGRAM_PORT);
             logger.info("End Create Sockets");
         } catch(Exception ex) {
             logger.info(ex.getMessage());
@@ -56,7 +47,8 @@ public class Distribution extends Thread {
     public void entry() {
         try {
             logger.info("Start Entry Step");
-            sendDatagramPacket(String.format(IAMTHERE, "hostname"));
+            sendDatagramPacket(String.format(DistributionCommands.IAMTHERE,
+                    DistributionHelper.getValidHost(serverSocket.getInetAddress().getHostName(), serverSocket.getLocalPort())));
             logger.info("End Entry Step");
         } catch(Exception ex) {
             logger.info(ex.getMessage());
