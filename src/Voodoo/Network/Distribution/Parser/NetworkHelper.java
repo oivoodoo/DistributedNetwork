@@ -1,6 +1,8 @@
-import java.net.InetAddress;
+package Voodoo.Network.Distribution.Parser;
 
-public class DistributionHelper {
+import Voodoo.Network.Distribution.Constants;
+
+public class NetworkHelper {
     public static byte[] toBytes(String line) {
         byte bytes[] = new byte[line.length()];
         for(int i = 0; i < line.length(); i++) {
@@ -9,8 +11,7 @@ public class DistributionHelper {
         return bytes;
     }
 
-    public static String getValidHost(String hostAddress, int port)
-    {
+    public static String getValidHost(String hostAddress, int port) {
         return String.format("%s#%d", hostAddress.replace('.','_'), port);
     }
 
@@ -19,7 +20,7 @@ public class DistributionHelper {
         if (params.length > 1) {
             return params[0].replace('_','.');
         }
-        return "127.0.0.1";
+        return Constants.LOCAL;
     }
 
     public static int getPort(String line) {
@@ -28,6 +29,6 @@ public class DistributionHelper {
             return Integer.parseInt(params[1]);
         }
         // TODO: it may cause unhandle errors, please review this code again.
-        return DistributionConstants.TCP_PORT;
+        return Constants.TCP_PORT;
     }
 }
