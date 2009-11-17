@@ -11,11 +11,11 @@ import Voodoo.Network.Distribution.Parser.NetworkRunner;
  */
 public class NetworkFactory {
 
-    public NetworkRunner createMaster(TcpClient tcpClient, UdpClient udpClient) {
+    public static NetworkRunner createMaster(TcpClient tcpClient, UdpClient udpClient) {
         return new Master(tcpClient, udpClient);
     }
 
-    public NetworkRunner createSlave(TcpClient tcpClient, UdpClient udpClient) {
+    public static NetworkRunner createSlave(TcpClient tcpClient, UdpClient udpClient) {
         return new Slave(tcpClient, udpClient);
     }
 

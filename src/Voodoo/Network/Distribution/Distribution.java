@@ -1,7 +1,11 @@
 package Voodoo.Network.Distribution;
 
+import Voodoo.Network.Distribution.Clients.TcpClient;
+import Voodoo.Network.Distribution.Clients.UdpClient;
 import Voodoo.Network.Distribution.Commands.CommonCommands;
+import Voodoo.Network.Distribution.Factory.NetworkFactory;
 import Voodoo.Network.Distribution.Parser.NetworkHelper;
+import Voodoo.Network.Distribution.Parser.NetworkRunner;
 import Voodoo.Network.Distribution.Servers.TcpServer;
 import Voodoo.Network.Distribution.Servers.UdpServer;
 
@@ -16,12 +20,12 @@ import java.util.logging.Logger;
  * Time: 9:59:28 PM
  */
 public class Distribution extends Thread {
-    private long id = -1;
     private boolean isRoot;
-    private Socket socket = null;
     private UdpServer udpServer = null;
     private TcpServer tcpServer = null;
-    private DatagramSocket datagramSocket = null;
+    private TcpClient tcpClient = null;
+    private UdpClient udpClient = null;
+    private NetworkRunner runner = null;
 
     private Logger logger = Logger.getLogger(Distribution.class.getName());
 
@@ -32,12 +36,13 @@ public class Distribution extends Thread {
             // for sending commands to all hosts in the you network,
             // and then 'serverSocket' collect all 'memory' information
             // and create report for client.
-            socket = new Socket();
-            datagramSocket = new DatagramSocket();
 
             udpServer = new UdpServer();
             tcpServer = new TcpServer();
-
+            tcpClient = new TcpClient(Constants.TCP_PORT);
+            udpClient = new UdpClient(Constants.DATAGRAM_PORT);
+            logger.info("Create network runner.");
+            runner = NetworkFactory.createSlave(tcpClient, udpClient);
             logger.info("End Create Sockets");
         } catch(Exception ex) {
             logger.info(ex.getMessage());
@@ -53,56 +58,30 @@ public class Distribution extends Thread {
         // Broadcasts udp packet and then collect all information from another
         // machines, if you haven't any data(hosts, ports) from another hosts by timeout,
         // you will stay manager of distributed network.
-        try
-        {
-            // Send broadcast invitation for all nodes in the network. 
-            entry();
-        } catch(Exception ex) {
-            logger.info(ex.getMessage());
-        }
-    }
-
-    private void sendDatagramPacket(String line) throws Exception {
-        // Common method for sending datagram packets(broadcast in the current version).
-        logger.info(String.format("Send Datagram Packet %s", line));
-        DatagramPacket packet = new DatagramPacket(NetworkHelper.toBytes(line), 0, line.length());
-        try
-        {
-            datagramSocket.send(packet);
-        } catch(Exception ex) {
-            logger.info(ex.getMessage());
-        }
+        
     }
 
     public void entry() throws Exception {
-        logger.info("Start Entry Step");
-        sendDatagramPacket(String.format(CommonCommands.IAMTHERE, "127.0.0.1"));
-//                Voodoo.Network.Distribution.Parser.NetworkHelper.getValidHost(serverSocket.getInetAddress().getHostName(),
-//                        serverSocket.getLocalPort())));
-        logger.info("End Entry Step");
+
     }
 
     private void closeSockets() {
         try {
-            if (socket != null) {
-                socket.close();
+            if (udpServer != null) {
+                udpServer.close();
             }
-            if (datagramSocket != null) {
-                datagramSocket.close();
+            if (tcpServer != null) {
+                tcpServer.close();
+            }
+            if (tcpClient != null) {
+                tcpClient.close();
+            }
+            if (udpClient != null) {
+                udpClient.close();
             }
         } catch(Exception ex) {
             logger.info(ex.getMessage());
         }
-    }
-
-    // Get id of network node.
-    public long getId() {
-        return id;
-    }
-
-    // Set id of network node.
-    public void setId(long id) {
-        this.id = id;
     }
 
     // Root - manager of network.

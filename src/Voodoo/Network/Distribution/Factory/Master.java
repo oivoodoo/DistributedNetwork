@@ -19,8 +19,8 @@ public class Master extends BaseFactoryItem {
     public Master(TcpClient tcpClient, UdpClient udpClient) {
         super(tcpClient, udpClient);
 
-        commands.put(MasterCommands.GET_MEMORY, new MemoryAction());
-        commands.put(MasterCommands.GATHER, new GatherAction());
+        sendCommands.put(MasterCommands.GET_MEMORY, new MemoryAction());
+        sendCommands.put(MasterCommands.GATHER, new GatherAction());
     }
 
     class MemoryAction implements Action {

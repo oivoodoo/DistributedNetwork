@@ -20,9 +20,9 @@ public class Slave extends BaseFactoryItem {
     public Slave(TcpClient tcpClient, UdpClient udpClient) {
         super(tcpClient, udpClient);
 
-        commands.put(SlaveCommands.TRY_MANAGER, new TryManagerAction());
-        commands.put(SlaveCommands.DEAD_NODE, new DeadNodeAction());
-        commands.put(SlaveCommands.MEMORY, new MemoryAction());
+        sendCommands.put(SlaveCommands.TRY_MANAGER, new TryManagerAction());
+        sendCommands.put(SlaveCommands.DEAD_NODE, new DeadNodeAction());
+        sendCommands.put(SlaveCommands.MEMORY, new MemoryAction());
     }
 
     class TryManagerAction implements Action {

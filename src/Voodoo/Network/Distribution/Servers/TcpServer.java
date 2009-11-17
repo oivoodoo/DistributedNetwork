@@ -49,7 +49,7 @@ public class TcpServer extends BaseServer {
     }
 
     @Override
-    protected void close() {
+    public void close() {
         super.close();
         try {
             if (server != null) {

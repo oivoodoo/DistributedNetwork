@@ -6,6 +6,6 @@ package Voodoo.Network.Distribution.Parser;
  * Time: 7:45:49 PM
  */
 public interface NetworkRunner {
-    public void execute(int type, String line);
+    public void execute(String line);
     public void receive(String line);
 }

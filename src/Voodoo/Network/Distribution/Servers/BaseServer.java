@@ -32,7 +32,7 @@ public abstract class BaseServer extends Thread {
         return "";
     }
 
-    protected void close() {
+    public void close() {
         try {
             if (reader != null) {
                 reader.close();

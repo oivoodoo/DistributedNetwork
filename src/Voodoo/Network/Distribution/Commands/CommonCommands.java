@@ -7,5 +7,5 @@ package Voodoo.Network.Distribution.Commands;
  */
 public class CommonCommands {
     public static final String PORT = "PORT %s\r\n";
-    public static final String IAMTHERE = "IAMTHERE: %s\r\n";
+    public static final String ENTRY = "ENTRY: %s\r\n";
 }
