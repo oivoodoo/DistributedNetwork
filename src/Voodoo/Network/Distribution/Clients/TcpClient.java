@@ -1,5 +1,8 @@
 package Voodoo.Network.Distribution.Clients;
 
+import Voodoo.Network.Distribution.Constants;
+import static Voodoo.Network.Distribution.Constants.TCP_PORT;
+
 import java.io.OutputStreamWriter;
 import java.net.InetSocketAddress;
 import java.net.Socket;
@@ -12,8 +15,8 @@ import java.net.Socket;
 public class TcpClient extends BaseClient {
     private Socket socket = null;
 
-    public TcpClient(int port) throws Exception {
-        super(port);
+    public TcpClient() throws Exception {
+        super(TCP_PORT);
 
         socket = new Socket();
     }

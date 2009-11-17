@@ -18,6 +18,8 @@ public class TcpServer extends BaseServer {
 
     public TcpServer() throws Exception {
         super(TCP_PORT);
+        server = new ServerSocket();
+        host = server.getInetAddress().getHostName();
     }
 
     public void run() {

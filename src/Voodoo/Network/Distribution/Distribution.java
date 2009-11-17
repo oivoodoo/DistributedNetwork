@@ -2,16 +2,13 @@ package Voodoo.Network.Distribution;
 
 import Voodoo.Network.Distribution.Clients.TcpClient;
 import Voodoo.Network.Distribution.Clients.UdpClient;
-import Voodoo.Network.Distribution.Commands.CommonCommands;
+import Voodoo.Network.Distribution.Commands.SlaveCommands;
 import Voodoo.Network.Distribution.Factory.NetworkFactory;
-import Voodoo.Network.Distribution.Parser.NetworkHelper;
+import Voodoo.Network.Distribution.Parser.NetworkCommand;
 import Voodoo.Network.Distribution.Parser.NetworkRunner;
 import Voodoo.Network.Distribution.Servers.TcpServer;
 import Voodoo.Network.Distribution.Servers.UdpServer;
 
-import java.net.DatagramPacket;
-import java.net.Socket;
-import java.net.DatagramSocket;
 import java.util.logging.Logger;
 
 /**
@@ -36,11 +33,11 @@ public class Distribution extends Thread {
             // for sending commands to all hosts in the you network,
             // and then 'serverSocket' collect all 'memory' information
             // and create report for client.
-
-            udpServer = new UdpServer();
             tcpServer = new TcpServer();
-            tcpClient = new TcpClient(Constants.TCP_PORT);
-            udpClient = new UdpClient(Constants.DATAGRAM_PORT);
+            tcpClient = new TcpClient();
+            udpServer = new UdpServer();
+            udpClient = new UdpClient();
+
             logger.info("Create network runner.");
             runner = NetworkFactory.createSlave(tcpClient, udpClient);
             logger.info("End Create Sockets");
@@ -58,11 +55,7 @@ public class Distribution extends Thread {
         // Broadcasts udp packet and then collect all information from another
         // machines, if you haven't any data(hosts, ports) from another hosts by timeout,
         // you will stay manager of distributed network.
-        
-    }
-
-    public void entry() throws Exception {
-
+        runner.execute(NetworkCommand.createPacket(SlaveCommands.ENTRY, tcpServer.getHost()));
     }
 
     private void closeSockets() {

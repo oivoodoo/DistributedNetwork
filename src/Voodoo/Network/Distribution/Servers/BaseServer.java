@@ -14,6 +14,7 @@ public abstract class BaseServer extends Thread {
     protected StringBuilder packetBuilder = null;
     protected BufferedReader reader = null;
     protected int port = 0;
+    protected String host = "";
 
     protected Logger logger = Logger.getLogger(BaseServer.class.getName());
 
@@ -30,6 +31,10 @@ public abstract class BaseServer extends Thread {
             return packetBuilder.toString();
         }
         return "";
+    }
+
+    public String getHost() {
+        return host;
     }
 
     public void close() {

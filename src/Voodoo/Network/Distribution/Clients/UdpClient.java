@@ -1,5 +1,8 @@
 package Voodoo.Network.Distribution.Clients;
 
+import Voodoo.Network.Distribution.Constants;
+import static Voodoo.Network.Distribution.Constants.DATAGRAM_PORT;
+
 import java.net.*;
 
 /**
@@ -10,8 +13,8 @@ import java.net.*;
 public class UdpClient extends BaseClient {
     private DatagramSocket socket = null;
 
-    public UdpClient(int port) throws Exception {
-        super(port);
+    public UdpClient() throws Exception {
+        super(DATAGRAM_PORT);
 
         socket = new DatagramSocket();
     }
