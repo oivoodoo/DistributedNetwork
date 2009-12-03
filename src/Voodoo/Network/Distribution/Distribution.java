@@ -9,6 +9,7 @@ import Voodoo.Network.Distribution.Parser.NetworkRunner;
 import Voodoo.Network.Distribution.Servers.TcpServer;
 import Voodoo.Network.Distribution.Servers.UdpServer;
 
+import java.util.UUID;
 import java.util.logging.Logger;
 
 /**
@@ -23,6 +24,7 @@ public class Distribution extends Thread {
     private TcpClient tcpClient = null;
     private UdpClient udpClient = null;
     private NetworkRunner runner = null;
+    private UUID uid = UUID.randomUUID(); 
 
     private Logger logger = Logger.getLogger(Distribution.class.getName());
 
@@ -39,12 +41,11 @@ public class Distribution extends Thread {
             udpClient = new UdpClient();
 
             logger.info("Create network runner.");
+            //` In the first step our node have permissions as slave node.
             runner = NetworkFactory.createSlave(tcpClient, udpClient);
             logger.info("End Create Sockets");
         } catch(Exception ex) {
             logger.info(ex.getMessage());
-        } finally {
-            closeSockets();
         }
     }
 
@@ -55,10 +56,11 @@ public class Distribution extends Thread {
         // Broadcasts udp packet and then collect all information from another
         // machines, if you haven't any data(hosts, ports) from another hosts by timeout,
         // you will stay manager of distributed network.
-        runner.execute(NetworkCommand.createPacket(SlaveCommands.ENTRY, tcpServer.getHost()));
+        runner.execute(NetworkCommand.createPacket(SlaveCommands.ENTRY,
+                Session.newSession(uid.toString(), tcpServer.getHost()).toString()));
     }
 
-    private void closeSockets() {
+    public void closeSockets() {
         try {
             if (udpServer != null) {
                 udpServer.close();

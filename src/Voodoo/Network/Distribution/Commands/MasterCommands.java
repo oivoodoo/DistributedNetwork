@@ -6,7 +6,7 @@ package Voodoo.Network.Distribution.Commands;
  * Time: 9:20:44 PM
  */
 public class MasterCommands {
-    public static final String GET_MEMORY = "GET_MEMORY:%s";
-    public static final String GATHER = "GATHER:%s";
-    public static final String GEN_ID = "GEN_ID:%s,%s";
+    public static final String GET_MEMORY = "GET_MEMORY";
+    public static final String GATHER = "GATHER";
+    public static final String GEN_ID = "GEN_ID";
 }

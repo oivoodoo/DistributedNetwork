@@ -34,13 +34,18 @@ public class NetworkCommand {
 
     public static String createPacket(String command, String ...params) {
         String packet = getRawCommand(command);
-        for(String param : params) {
-            packet += packet + ",";
+        for(String value : params) {
+            packet += value + ",";
         }
         if (packet.indexOf(',') == packet.length() - 1) {
             packet = packet.substring(0, packet.length() - 2); // TODO: Make sense to check correct packet.
         }
         return String.format("%s\r\n", packet);
+    }
+
+    public String getPacket()
+    {
+        return rawLine;
     }
 
     protected static String getRawCommand(String rawCommand) {

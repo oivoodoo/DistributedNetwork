@@ -20,15 +20,33 @@ public class Slave extends BaseFactoryItem {
     public Slave(TcpClient tcpClient, UdpClient udpClient) {
         super(tcpClient, udpClient);
 
+        receiveCommands.put(SlaveCommands.ENTRY, new EntryServerAction());
+
+        sendCommands.put(SlaveCommands.ENTRY, new EntryAction());
         sendCommands.put(SlaveCommands.TRY_MANAGER, new TryManagerAction());
         sendCommands.put(SlaveCommands.DEAD_NODE, new DeadNodeAction());
         sendCommands.put(SlaveCommands.MEMORY, new MemoryAction());
     }
 
+    class EntryServerAction implements Action {
+        public void execute(NetworkCommand command) throws Exception {
+            // TODO: Doing something with command
+            String commandRaw = command.getCommand();
+        }
+    }
+
+    class EntryAction implements Action {
+        public void execute(NetworkCommand command) throws Exception {
+            udpClient.connect(Constants.BROADCAST);
+            udpClient.send(NetworkCommand.createPacket(command.getPacket()));
+            udpClient.close();
+        }
+    }
+
     class TryManagerAction implements Action {
         public void execute(NetworkCommand command) throws Exception {
             udpClient.connect(Constants.BROADCAST);
-            udpClient.send(NetworkCommand.createPacket(SlaveCommands.TRY_MANAGER));
+//            udpClient.send(command);
             udpClient.close();
         }
     }

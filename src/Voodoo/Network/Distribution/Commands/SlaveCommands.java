@@ -7,7 +7,7 @@ package Voodoo.Network.Distribution.Commands;
  */
 public class SlaveCommands {
     public static final String TRY_MANAGER = "TRY_MANAGER";
-    public static final String DEAD_NODE = "DEAD_NODE:%s";
-    public static final String MEMORY = "MEMORY:%s";
-    public static final String ENTRY = "ENTRY:%s";
+    public static final String DEAD_NODE = "DEAD_NODE";
+    public static final String MEMORY = "MEMORY";
+    public static final String ENTRY = "ENTRY"; 
 }

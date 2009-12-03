@@ -27,10 +27,12 @@ public class BaseFactoryItem implements NetworkRunner {
     }
 
     public void execute(String line) {
+        logger.info(String.format("execute with %s", line));
         runCommand(sendCommands, line);
     }
 
     public void receive(String line) {
+        logger.info(String.format("receive with %s", line));
         runCommand(receiveCommands, line);
     }
 

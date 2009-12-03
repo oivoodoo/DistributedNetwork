@@ -6,6 +6,6 @@ package Voodoo.Network.Distribution.Commands;
  * Time: 11:36:22 AM
  */
 public class CommonCommands {
-    public static final String PORT = "PORT %s\r\n";
-    public static final String ENTRY = "ENTRY: %s\r\n";
+    public static final String PORT = "PORT";
+    public static final String ENTRY = "ENTRY";
 }

@@ -21,7 +21,7 @@ public abstract class BaseServer extends Thread {
     public BaseServer(int port) throws Exception {
         logger.info(String.format("Create Voodoo.Network.Distribution.Servers.BaseServer %d", port));
         this.port = port;
-        serverThread.start();
+        // serverThread.start();
     }
 
     protected abstract void execute();

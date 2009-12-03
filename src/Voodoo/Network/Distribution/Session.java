@@ -24,6 +24,12 @@ public class Session {
         return host;
     }
 
+    @Override
+    public String toString()
+    {
+        return host + "#" + id;
+    }
+
     //  Create new session generating unique id for determining what
     // are certain process do you use.
     public static Session newSession(String host) {
@@ -32,5 +38,13 @@ public class Session {
 
     public static Session newSession(String id, String host) {
         return new Session(id, host);
+    }
+
+    //  If you get raw data from one of the clients you have to convert it
+    // to session object.
+    public static Session fromString(String line)
+    {
+        String[] values = line.split("#");
+        return new Session(values[1], values[0]);
     }
 }

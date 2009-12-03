@@ -2,15 +2,35 @@
 <project relativePaths="false" version="4">
   <component name="ChangeListManager" verified="true">
     <list default="true" id="50824e1e-37a2-4dd6-923c-8ba3b5c804f5" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DistributedNetwork/Voodoo/Network/Distribution/Parser/NetworkRunner.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Servers/UdpServer.java" afterPath="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Servers/UdpServer.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DistributedNetwork/Voodoo/Network/Distribution/Clients/TcpClient.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DistributedNetwork/Voodoo/Network/Distribution/Factory/Master.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DistributedNetwork/Voodoo/Network/Distribution/Parser/NetworkCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DistributedNetwork/Voodoo/Network/Distribution/Clients/UdpClient.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DistributedNetwork/Voodoo/Network/Distribution/Servers/BaseServer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DistributedNetwork/Voodoo/Network/Distribution/Distribution.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Commands/SlaveCommands.java" afterPath="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Commands/SlaveCommands.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Clients/UdpClient.java" afterPath="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Clients/UdpClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Servers/TcpServer.java" afterPath="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Servers/TcpServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Factory/BaseFactoryItem.java" afterPath="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Factory/BaseFactoryItem.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DistributedNetwork/Voodoo/Network/Distribution/Parser/NetworkHelper.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Distribution.java" afterPath="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Distribution.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Servers/BaseServer.java" afterPath="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Servers/BaseServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Clients/TcpClient.java" afterPath="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Clients/TcpClient.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DistributedNetwork/Voodoo/Network/Distribution/Clients/BaseClient.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Factory/Master.java" afterPath="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Factory/Master.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Commands/MasterCommands.java" afterPath="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Commands/MasterCommands.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Factory/Slave.java" afterPath="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Factory/Slave.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DistributedNetwork/Voodoo/Network/Distribution/Factory/BaseFactoryItem.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Session.java" afterPath="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Session.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DistributedNetwork/Voodoo/Network/Distribution/Factory/NetworkFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DistributedNetwork/Voodoo/Network/Distribution/Servers/UdpServer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DistributedNetwork/Voodoo/Network/Distribution/Session.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DistributedNetwork/Voodoo/Network/Distribution/Constants.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DistributedNetwork/Voodoo/Network/Distribution/Servers/TcpServer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DistributedNetwork/Voodoo/Network/Distribution/Factory/Slave.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Servers/TcpServer.java" afterPath="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Servers/TcpServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Parser/NetworkCommand.java" afterPath="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Parser/NetworkCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Commands/CommonCommands.java" afterPath="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Commands/CommonCommands.java" />
     </list>
     <ignored path="DistributedNetwork.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,6 +49,73 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Factory/Slave.java" line="33" class="Voodoo.Network.Distribution.Factory.Slave.EntryServerAction" package="Voodoo.Network.Distribution.Factory">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Distribution.java" line="58" class="Voodoo.Network.Distribution.Distribution" package="Voodoo.Network.Distribution">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Factory/BaseFactoryItem.java" line="30" class="Voodoo.Network.Distribution.Factory.BaseFactoryItem" package="Voodoo.Network.Distribution.Factory">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Factory/BaseFactoryItem.java" line="39" class="Voodoo.Network.Distribution.Factory.BaseFactoryItem" package="Voodoo.Network.Distribution.Factory">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Factory/BaseFactoryItem.java" line="35" class="Voodoo.Network.Distribution.Factory.BaseFactoryItem" package="Voodoo.Network.Distribution.Factory">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_any>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -70,37 +157,28 @@
   <component name="FileColors" enabled="false" enabledForTabs="false" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Slave.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Factory/Slave.java">
+      <file leaf-file-name="UdpClient.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Clients/UdpClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="13" selection-start="443" selection-end="443" vertical-scroll-proportion="0.0">
+            <state line="16" column="9" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NetworkCommand.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Parser/NetworkCommand.java">
+      <file leaf-file-name="CommonCommands.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Commands/CommonCommands.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="13" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0">
+            <state line="7" column="13" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NetworkHelper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Parser/NetworkHelper.java">
+      <file leaf-file-name="Constants.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="13" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NetworkRunner.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Parser/NetworkRunner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="17" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0">
+            <state line="9" column="34" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -109,7 +187,7 @@
       <file leaf-file-name="BaseServer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Servers/BaseServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="22" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0">
+            <state line="11" column="45" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -118,7 +196,7 @@
       <file leaf-file-name="TcpServer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Servers/TcpServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="13" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0">
+            <state line="17" column="40" selection-start="469" selection-end="469" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -127,18 +205,16 @@
       <file leaf-file-name="UdpServer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Servers/UdpServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="13" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="14" column="28" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Constants.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Constants.java">
+      <file leaf-file-name="BaseClient.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Clients/BaseClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="13" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0">
+            <state line="10" column="22" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -147,18 +223,25 @@
       <file leaf-file-name="Distribution.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Distribution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="13" selection-start="602" selection-end="602" vertical-scroll-proportion="0.33333334">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="58" column="0" selection-start="2211" selection-end="2211" vertical-scroll-proportion="0.33333334">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Session.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Session.java">
+      <file leaf-file-name="NetworkRunner.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Parser/NetworkRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="13" selection-start="144" selection-end="144" vertical-scroll-proportion="0.0">
+            <state line="8" column="16" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseFactoryItem.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Factory/BaseFactoryItem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="73" selection-start="1055" selection-end="1055" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -174,22 +257,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Parser/NetworkCommand.java" />
-        <option value="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Session.java" />
         <option value="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Parser/NetworkRunner.java" />
-        <option value="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Factory/BaseFactoryItem.java" />
-        <option value="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Factory/Slave.java" />
         <option value="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Factory/Master.java" />
-        <option value="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Servers/UdpServer.java" />
         <option value="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Factory/NetworkFactory.java" />
-        <option value="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Commands/CommonCommands.java" />
-        <option value="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Commands/SlaveCommands.java" />
-        <option value="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Commands/MasterCommands.java" />
-        <option value="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Servers/BaseServer.java" />
         <option value="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Clients/TcpClient.java" />
         <option value="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Clients/UdpClient.java" />
-        <option value="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Servers/TcpServer.java" />
+        <option value="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Session.java" />
+        <option value="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Factory/Slave.java" />
         <option value="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Distribution.java" />
+        <option value="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Servers/TcpServer.java" />
+        <option value="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Commands/CommonCommands.java" />
+        <option value="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Commands/MasterCommands.java" />
+        <option value="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Commands/SlaveCommands.java" />
+        <option value="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Parser/NetworkCommand.java" />
+        <option value="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Factory/BaseFactoryItem.java" />
+        <option value="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Servers/UdpServer.java" />
+        <option value="$PROJECT_DIR$/src/Voodoo/Network/Distribution/Servers/BaseServer.java" />
       </list>
     </option>
   </component>
@@ -218,18 +301,17 @@
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
-      <showMembers />
+      <showMembers ProjectPane="true" />
       <showModules />
       <showLibraryContents />
-      <hideEmptyPackages />
+      <hideEmptyPackages ProjectPane="true" />
       <abbreviatePackageNames />
-      <autoscrollToSource />
+      <autoscrollToSource ProjectPane="true" />
       <autoscrollFromSource />
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -392,7 +474,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Favorites" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -413,7 +496,7 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.DistributionNerwork">
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -528,20 +611,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1280" height="718" extended-state="0" />
-    <editor active="true" />
+    <frame x="-4" y="25" width="1288" height="722" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928944" sideWeight="0.5" order="6" side_tool="false" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="1" side_tool="false" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328" sideWeight="0.5" order="1" side_tool="false" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33578432" sideWeight="0.66022545" order="0" side_tool="false" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29464287" sideWeight="0.6624" order="0" side_tool="false" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3986135" sideWeight="0.5" order="3" side_tool="false" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928944" sideWeight="0.5" order="2" side_tool="false" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3264" sideWeight="0.0" order="3" side_tool="false" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.424" sideWeight="0.5" order="2" side_tool="false" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" />
@@ -582,102 +665,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Clients/TcpClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Clients/BaseClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="22" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Factory/Action.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="17" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Factory/BaseFactoryItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="13" selection-start="413" selection-end="413" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Factory/Master.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="13" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Factory/NetworkFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Factory/Slave.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="443" selection-end="443" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Parser/NetworkCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Parser/NetworkHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="13" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Parser/NetworkRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Servers/BaseServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="22" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Servers/TcpServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="13" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Servers/UdpServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -689,12 +679,101 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Commands/SlaveCommands.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="45" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Clients/TcpClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Commands/MasterCommands.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Parser/NetworkCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Servers/UdpServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="28" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Commands/CommonCommands.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="34" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Clients/UdpClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="9" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Clients/BaseClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="22" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Parser/NetworkRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="16" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Factory/BaseFactoryItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="73" selection-start="1055" selection-end="1055" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Servers/TcpServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="40" selection-start="469" selection-end="469" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Servers/BaseServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="45" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Voodoo/Network/Distribution/Distribution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="13" selection-start="602" selection-end="602" vertical-scroll-proportion="0.33333334">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="58" column="0" selection-start="2211" selection-end="2211" vertical-scroll-proportion="0.33333334">
+          <folding />
         </state>
       </provider>
     </entry>
